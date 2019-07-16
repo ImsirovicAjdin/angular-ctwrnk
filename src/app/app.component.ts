@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   //styleUrls: [ './app.component.css' ]
   template: `
     <div class="parent">parent</div>
+    <app-child [data]="parentData"></app-child>
   `
 })
 export class AppComponent  {
-  name = 'Angular';
+  parentData = {
+    name: 'Ajdin'
+  }
 }
